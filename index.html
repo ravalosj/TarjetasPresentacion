@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fumigadora Fullmi Xpress</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .business-card {
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .business-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .banner {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), 
+                        url('https://drive.google.com/file/d/1bHiNHjzclh492vLu_9hFMZE_1mmWs4nB/view') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .banner::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #2c5530;
+        }
+        
+        .company-name {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            padding: 0 15px;
+        }
+        
+        .content {
+            padding: 30px 25px 25px;
+            text-align: center;
+        }
+        
+        .tagline {
+            color: #2c5530;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .description {
+            background-color: #f0f8f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-size: 14px;
+            color: #444;
+            line-height: 1.5;
+            text-align: left;
+            border-left: 4px solid #2c5530;
+        }
+        
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            width: 80px;
+        }
+        
+        .service-icon {
+            background-color: #e9f5e9;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #2c5530;
+            font-size: 20px;
+        }
+        
+        .service-text {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+        }
+        
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #444;
+        }
+        
+        .contact-item i {
+            margin-right: 10px;
+            color: #2c5530;
+            width: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+        
+        .facebook {
+            background-color: #3b5998;
+        }
+        
+        .whatsapp {
+            background-color: #25D366;
+        }
+        
+        .website {
+            background-color: #4a6fa5;
+        }
+        
+        .slogan {
+            margin-top: 20px;
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .website-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #2c5530;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        
+        .website-link:hover {
+            border-bottom: 1px solid #2c5530;
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <div class="banner">
+            <h1 class="company-name">FUMIGADORA FULLMI XPRESS</h1>
+        </div>
+        
+        <div class="content">
+            <p class="tagline">Protegiendo su hogar y negocio de plagas</p>
+            
+            <div class="description">
+                <p><strong>Fumigadora Fullmi Xpress</strong> es su aliado confiable en el control y eliminación de plagas. Ofrecemos servicios profesionales de fumigación para hogares, empresas e industrias, utilizando productos seguros y técnicas avanzadas para garantizar espacios libres de insectos y roedores.</p>
+            </div>
+            
+            <div class="services">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-text">Fumigación Residencial</div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="service-text">Fumigación Comercial</div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="service-text">Control Industrial</div>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+506 7143 0003</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>fullmixpress@hotmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Servicio en toda Costa Rica</span>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/fumigadora_fullmi_xpres?igsh=MXB5N2c2ZjRvOGdmYg==" class="social-link instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/17Ns6XKy1H/" class="social-link facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/+50671430003?text=Hola%20visualicé%20tu%20tarjeta%20de%20presentación%20y%20estoy%20interesado%20en%20tus%20servicios" class="social-link whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://sites.google.com/view/fumigadorafullmixpress/p%C3%A1gina-principal" class="social-link website" target="_blank">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+            
+            <a href="https://sites.google.com/view/fumigadorafullmixpress/p%C3%A1gina-principal" class="website-link" target="_blank">
+                Visita nuestro sitio web
+            </a>
+            
+            <p class="slogan">¡Su salud y bienestar son nuestra prioridad!</p>
+        </div>
+    </div>
+</body>
+</html>
